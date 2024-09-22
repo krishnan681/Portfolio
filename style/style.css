@@ -31,10 +31,10 @@ header{
     border-bottom: 1px solid transparent;
     transition: all .40s ease;
 }
-/* .logo img{
+.navbar-brand img{
     width: 155px;
     height: auto;    
-} */
+}
 /* .navbar{
     display: flex;
 } */
