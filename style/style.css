@@ -1,0 +1,396 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.root{
+    --border-color:#000;
+    --text-color: red;
+    --main-color: #717171;
+    --second-color: white;
+    --other-color: #12141c;
+    --h1-font: 5.2rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+body{
+     background: rgb(0, 0, 0);
+     color: var(--text-color);
+}
+
+header{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40s ease;
+}
+.logo img{
+    width: 155px;
+    height: auto;    
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+.navbar a:hover{
+    background: white;
+    color: black;
+}
+#menu-icon{
+    font-size: 36px;
+    color: var(--text-color);
+    z-index: 1001;
+    cursor: pointer;
+    display: none;
+}
+
+section{
+    padding-left: 160px 16% 90px;
+}
+.home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(https://images.wallpapersden.com/image/download/foggy-night-moon_am5pbWWUmZqaraWkpJRnbW1lrWZtZWU.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-attachment: fixed;
+}
+.home-text h1{
+    color: white;
+    margin: 20px 0;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: 5px;
+    text-shadow: 0 0 10px #00b3ff,
+                 0 0 20px #00b3ff,
+                 0 0 40px #00b3ff,
+                 0 0 80px #00b3ff,
+                 0 0 120px #00b3ff;
+}
+span{
+    color: white;
+}
+.home-text h4{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.home-text h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    text-decoration: underline;
+    text-decoration-color: #73a4fd;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    background: var(--main-color);
+    color: rgb(70, 30, 30);
+    border: px solid white;
+    transition: all .40s ease;
+}
+.btn:hover{
+    transform: scale(1.01) translatey(-5px);
+    background: white;
+    border-bottom: 1px solid #0e1630;
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.about-text h4{
+    margin: 10px 0;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+}
+.about-text h2{
+    font-size: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+}
+.about-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;   
+}
+.about-gri{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.about-in h5{
+    font-size: 22px;
+    font-weight: 600;
+    color: white;
+}
+.about-img img{
+    height: auto;
+    width: 100%;
+    max-width: 460px;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+.about-img img:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-bottom: 1px solid var(--main-color);
+}
+.main-text{
+    text-align: center;
+}
+.main-text h2{
+    font-size: 45px;
+    margin-bottom: 10px;
+    color: white;
+}
+.main-text h4{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.services-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.box{
+    padding: 45px;
+    background: #12141c;
+    border-top: 5px solid transparent;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+    cursor: pointer;
+}
+.box h3{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 15px 0;
+    transition: all .40s ease;
+}
+.box p{
+    color: white;
+    font-size: 17px;
+    line-height: 30px;
+}
+.box:hover{
+    transform: scale(1.01) translateY(-5px);
+    border-top: 5px solid var(--main-color);
+}
+
+.portfolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+.row img{
+    height: 150%;
+    width: 400%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+.row{
+    padding: 25px;
+    background: #12141c;
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+.main-row{
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+    margin-bottom: 1rem;
+}
+.row h3{
+    font-size: 65px;
+    font-weight: 700;
+}
+.row h6{
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.row-icon i{
+    font-size: 1px;
+}
+.row:hover{
+    transform: scale(1.0) translateY(-5px);
+    cursor: pointer;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+.contact-text h4{
+    margin: 15px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-text h2{
+    font-size: 55px;
+    color: white;
+}
+.contact-text p{
+    color: white;
+    font-size: 55px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+}
+.contact-list{
+    margin-bottom: 3rem;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    font-weight: 60;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    transform: scale(1.1) translate(50px);
+    color: white;
+}
+.contact-icons i{
+    height: 60vh;
+    width: 40px;
+    background: white;
+    border-radius: 50px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 58px;
+    margin-right: 50px;
+    transition: all .40s ease;
+}
+.contact-icons i:hover{
+    transform: scale(1.1) translate(50px);
+    color: white;
+    background: white;
+}
+
+.last-text p{
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+@media (max-width: 1325px){
+    header{
+    padding: 16px 3%;
+    }
+    header.sticky{
+    padding: 8px 3%;
+    }
+    section{
+        padding: 130px 3% 60px;
+    }
+}
+
+@media (max-width: 970px){
+    :root{
+        --h1-font:4.2rem;
+       --h2-font:2.9rem;
+       --p-font:1rem;
+    }
+    section{
+        padding: 70px 3% 60px;
+    }
+    .home{
+        height: 85vh;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+    }
+    .contact{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 350px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        background: #12141c;
+        text-align: left;
+        transition: all .40s ease;  
+    }
+    .navbar a{
+        display: flex;
+        padding: 1rem;
+        margin: 1rem;
+        justify-content: space-around;
+    }
+    .navbar.active{
+        top:100%;
+    }
+    :root{
+        --h1-font: 3.7rem;
+       --h2-font: 2.7rem; 
+    }
+}
+        
