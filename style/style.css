@@ -24,27 +24,27 @@ body{
 }
 
 header{
-    position: fixed;
-    right: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 1000;
+    /* position: fixed; */
+    /* right: 0px;
+    top: 0px; */
+    /* width: 100%; */
+    /* z-index: 1000;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 16%;
-    border-bottom: 1px solid transparent;
+    justify-content: space-between; */
+    /* background: transparent; */
+    /* padding: 22px 16%; */
+    /* border-bottom: 1px solid transparent; */
     transition: all .40s ease;
 }
-.logo img{
+/* .logo img{
     width: 155px;
     height: auto;    
-}
-.navbar{
+} */
+/* .navbar{
     display: flex;
-}
-.navbar a{
+} */
+/* .navbar a{
     color: rgb(255, 255, 255);
     font-size: 17px;
     font-weight: 600;
@@ -52,18 +52,18 @@ header{
     margin: 0 2px;
     border-radius: 0.5rem;
     transition: all .40s ease;
-}
+} */
 .navbar a:hover{
-    background: white;
-    color: black;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
-#menu-icon{
-    font-size: 36px;
-    color: var(--text-color);
-    z-index: 1001;
-    cursor: pointer;
-    display: none;
-}
+/* #menu-icon{ */
+    /* font-size: 36px; */
+    /* color: var(--text-color); */
+    /* z-index: 1001; */
+    /* cursor: pointer; */
+    /* display: none; */
+/* } */
 
 section{
     padding-left: 160px 16% 90px;
