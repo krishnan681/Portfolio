@@ -24,17 +24,11 @@ body{
 }
 
 header{
-    /* position: fixed; */
-    /* right: 0px;
-    top: 0px; */
-    /* width: 100%; */
-    /* z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; */
-    /* background: transparent; */
-    /* padding: 22px 16%; */
-    /* border-bottom: 1px solid transparent; */
+    position: sticky;
+    width: 100%;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
     transition: all .40s ease;
 }
 /* .logo img{
@@ -53,7 +47,7 @@ header{
     border-radius: 0.5rem;
     transition: all .40s ease;
 } */
-.navbar a:hover{
+.navbar-collapse a:hover{
     background: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
 }
