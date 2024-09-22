@@ -25,8 +25,9 @@ body{
 }
 
 header{
-    position: sticky;
+    position: fixed;
     width: 100%;
+    z-index: 100;
     /* background: transparent; */
     padding: 22px 16%;
     border-bottom: 1px solid transparent;
