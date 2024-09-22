@@ -32,9 +32,17 @@ header{
     transition: all .40s ease;
 }
 .navbar-brand img{
-    width: 155px;
-    height: auto;    
+    width: 15%;
+    border:2px solid #000;
+    
+    border-radius: 50%;
+    /* overflow: hidden; */
+    height: auto; 
+    
+    
+    
 }
+
 /* .navbar{
     display: flex;
 } */
